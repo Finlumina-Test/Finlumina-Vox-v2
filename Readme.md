@@ -13,7 +13,7 @@ This application uses the following Twilio products in conjuction with OpenAI's 
 To use the app, you will  need:
 
 - **Node.js 18+** We used \`18.20.4\` for development;
-- **A Twilio account.** Y
+- **A Twilio account.** 
 - **A Twilio number with _Voice_ capabilities.**
 - **An OpenAI account and an OpenAI API Key.** You can sign up [here](https://platform.openai.com/).
   - **OpenAI Realtime API access.**
