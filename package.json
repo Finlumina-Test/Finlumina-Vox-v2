@@ -1,20 +1,19 @@
 {
-  "name": "twilloaivoiceassistant",
-  "version": "1.0.0",
+  "name": "finlumina-vox-v2",
+  "version": "1.0.1",
+  "description": "Finlumina Vox v2 — Twilio Media Streams <> OpenAI Realtime (GA-ready)",
   "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "description": "",
   "type": "module",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "engines": {
+    "node": "18.x"
+  },
   "dependencies": {
-    "@fastify/formbody": "^8.0.2",
-    "@fastify/websocket": "^11.2.0",
-    "dotenv": "^17.2.1",
-    "fastify": "^5.4.0",
-    "ws": "^8.18.3"
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "twilio": "^4.9.0",
+    "ws": "^8.13.0"
   }
 }
