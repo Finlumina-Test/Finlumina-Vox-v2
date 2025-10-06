@@ -6,6 +6,8 @@ import dotenv from "dotenv";
 import routerVoice from "./routes/voice.js";
 import ConnectionManager from "./services/openai_service.js";
 import { log } from "./utils/logger.js";
+import voiceRoutes from './routes/voice.js';
+app.use('/voice', voiceRoutes);
 
 dotenv.config();
 
