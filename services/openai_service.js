@@ -1,7 +1,9 @@
 // services/openai_service.js
 import WebSocket from "ws";
 import { log } from "../utils/logger.js";
-import twilio from "twilio";
+import { createRequire } from "module";
+const require = createRequire(import.meta.url);
+const twilio = require("twilio");
 
 /**
  * ConnectionManager: manages a Twilio WS (incoming from Twilio Media Stream)
