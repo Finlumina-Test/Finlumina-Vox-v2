@@ -1,6 +1,9 @@
 // routes/voice.js
 import { Router } from "express";
-import { twiml as TwilioTwiml } from "twilio";
+import { createRequire } from "module";
+const require = createRequire(import.meta.url);
+const twilio = require("twilio");
+const { twiml: TwilioTwiml } = twilio;
 
 const router = Router();
 
