@@ -1,21 +1,20 @@
-// server.js
 import express from "express";
 import http from "http";
 import { WebSocketServer } from "ws";
 import dotenv from "dotenv";
-import routerVoice from "./routes/voice.js";
+import voiceRoutes from "./routes/voice.js";
 import ConnectionManager from "./services/openai_service.js";
 import { log } from "./utils/logger.js";
-import voiceRoutes from './routes/voice.js';
-app.use('/voice', voiceRoutes);
 
 dotenv.config();
 
 const PORT = process.env.PORT || 5050;
 const app = express();
+
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
-app.use("/", routerVoice);
+
+app.use("/voice", voiceRoutes);
 
 app.get("/ping", (_req, res) => res.status(200).send("OK"));
 
