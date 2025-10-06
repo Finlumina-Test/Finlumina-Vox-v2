@@ -23,7 +23,7 @@ export default class ConnectionManager {
     this.renewTimer = null;
     this.pendingGoodbye = false;
     this.goodbyeAudioHeard = false;
-    this.openaiModel = process.env.OPENAI_REALTIME_MODEL || "gpt-realtime";
+    this.openaiModel = process.env.OPENAI_REALTIME_MODEL || "gpt-4o-realtime-preview";
     this.systemInstructions = process.env.SYSTEM_INSTRUCTIONS || "You are a helpful assistant.";
     this.sessionRenewMs = Number(process.env.SESSION_RENEW_INTERVAL_MS || 3300000);
     this.twilioClient = (process.env.TWILIO_ACCOUNT_SID && process.env.TWILIO_AUTH_TOKEN) ?
